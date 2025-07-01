@@ -1,6 +1,6 @@
 "use client";
 
-import { NavLinkProps } from "@/types/allTypes";
+import { NavLinkProps } from "@/types/AllTypes";
 import Link from "next/link";
 
 const NavLink: React.FC<NavLinkProps> = ({ href, label }) => {

@@ -17,7 +17,7 @@ html {
 }
 @layer utilities {
   .container {
-    @apply max-w-[1440px] px-4 py-10;
+    @apply max-w-[1440px] px-4 py-10 mx-auto;
   }
   .primaryColor {
     @apply text-[#B98B5C];
@@ -45,19 +45,16 @@ html {
   }
 
   .hero-heading {
-    @apply text-[22px] lg:text-[48px] 2xl:text-[52px] font-bold uppercase;
-  }
-  .hero-heading-sub {
-    @apply text-2xl lg:text-[38px] 2xl:text-[52px] font-bold uppercase;
+    @apply text-[22px] lg:text-[48px] 2xl:text-[62px] font-bold uppercase text-[#3F1C12];
   }
   .sub-heading {
-    @apply text-2xl lg:text-[32px] 2xl:text-[38px] font-bold;
+    @apply text-2xl lg:text-[32px] 2xl:text-[38px] font-bold text-[#3F1C12];
   }
   .sub-heading-para {
     @apply text-[22px] md:text-[28px] font-bold;
   }
   .para-text {
-    @apply text-[16px] md:text-[18px] font-normal;
+    @apply text-[16px] md:text-[16px] font-normal text-[#2d140d];
   }
 }
 @media (prefers-color-scheme: dark) {
@@ -72,3 +69,5 @@ body {
   color: black;
   font-family: "Nunito", sans-serif;
 }
+
+
