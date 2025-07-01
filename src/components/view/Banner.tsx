@@ -2,7 +2,7 @@ import Image from "next/image";
 import React from "react";
 import BannerImage from "../../../public/assets/bannerImage.png";
 import Button from "../buttons/Button";
-
+import * as motion from "motion/react-client";
 export default function Banner() {
   return (
     <div className="banner flex flex-col lg:flex-row container j h-full lg:h-screen space-y-4 lg:space-y-0">
@@ -22,14 +22,26 @@ export default function Banner() {
         </div>
       </div>
       {/* image */}
-      <div className="w-full lg:w-2/5 border flex justify-center h-full">
-        <Image
-          width={600}
-          height={410}
-          src={BannerImage}
-          alt="flying cup of coffee"
-          className="border aspect-square"
-        />
+      <div className="w-full lg:w-2/5 flex justify-center h-full">
+        <motion.div
+          initial={{ y: [null, -15, 0] }}
+          animate={{ y: [null, 15, 0] }}
+          transition={{
+            duration: 2,
+            ease: "easeInOut",
+            times: [0, 0.2, 0.5, 1, 0.3],
+            repeat: Infinity,
+            repeatDelay: 1,
+          }}
+        >
+          <Image
+            width={600}
+            height={410}
+            src={BannerImage}
+            alt="flying cup of coffee"
+            className="border aspect-square"
+          />
+        </motion.div>
       </div>
     </div>
   );
