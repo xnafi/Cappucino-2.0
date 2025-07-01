@@ -1,5 +1,3 @@
-"use client";
-
 import Image from "next/image";
 import Bean from "../../../public/assets/coffee_Bean.png";
 
