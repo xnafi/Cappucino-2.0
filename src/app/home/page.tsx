@@ -4,6 +4,7 @@ import React from 'react'
 import BookTableForm from '../../components/view/BookTable';
 import PopularMenu from '@/components/view/PopularMenu';
 import OurBlog from '@/components/view/OurBlog';
+import Newsletter from '@/components/view/NewsLetter';
 
 export default function HomePage() {
   return (
@@ -12,7 +13,8 @@ export default function HomePage() {
       <PopularMenu />
       <CoffeeGallery />
       <BookTableForm />
-      <OurBlog/>
+      <OurBlog />
+      <Newsletter/>
     </div>
   );
 }
