@@ -15,3 +15,11 @@ export interface blogItem {
   description: string;
   image: string;
 }
+// contact us form field
+export type ContactFormFields = {
+  firstName: string;
+  lastName: string;
+  email: string;
+  subject: string;
+  message: string;
+};

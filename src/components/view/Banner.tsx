@@ -4,7 +4,6 @@ import BannerImage from "../../../public/assets/bannerImage.png";
 import Button from "../buttons/Button";
 import * as motion from "motion/react-client";
 
-
 export default function Banner() {
   return (
     <div className="banner flex flex-col lg:flex-row container j h-full lg:h-screen space-y-4 lg:space-y-0">
@@ -26,8 +25,7 @@ export default function Banner() {
       {/* image */}
       <div className="w-full lg:w-2/5 flex justify-center h-full">
         <motion.div
-          animate={{ y: [0, 15, 0], rotate: [0, 10, 0] }}
-          whileHover={{ y: [0, 0, 0], rotate: [10, 10, 10] }}
+          animate={{ y: [0, 15, 0] }}
           transition={{
             duration: 2,
             ease: "easeInOut",
