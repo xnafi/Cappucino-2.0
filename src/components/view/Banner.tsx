@@ -3,6 +3,8 @@ import React from "react";
 import BannerImage from "../../../public/assets/bannerImage.png";
 import Button from "../buttons/Button";
 import * as motion from "motion/react-client";
+
+
 export default function Banner() {
   return (
     <div className="banner flex flex-col lg:flex-row container j h-full lg:h-screen space-y-4 lg:space-y-0">

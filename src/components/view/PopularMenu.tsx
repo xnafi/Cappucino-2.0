@@ -1,4 +1,5 @@
 import { menuItems } from "@/data/menuItems";
+import * as motion from "motion/react-client";
 import Image from "next/image";
 
 
@@ -6,9 +7,7 @@ import Image from "next/image";
 export default function PopularMenu() {
   return (
     <section className="container text-center">
-      <h2 className="sub-heading mb-2">
-        OUR POPULAR MENU
-      </h2>
+      <h2 className="sub-heading mb-2">OUR POPULAR MENU</h2>
 
       <div className="flex justify-center items-center gap-4 my-4">
         <div className="h-px w-24 bg-[#B98B5C]" />
@@ -29,7 +28,9 @@ export default function PopularMenu() {
 
       <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mx-auto text-left">
         {menuItems.map((item, index) => (
-          <div
+          <motion.div
+            whileHover={{ scale: 1.03 }}
+            transition={{ duration: 0.5,ease:"easeInOut"}}
             key={index}
             className="flex items-start gap-4 border border-gray-200 rounded-lg p-4 shadow-sm bg-white"
           >
@@ -51,7 +52,7 @@ export default function PopularMenu() {
               </div>
               <p className="text-gray-600 text-sm mt-1">{item.description}</p>
             </div>
-          </div>
+          </motion.div>
         ))}
       </div>
     </section>
