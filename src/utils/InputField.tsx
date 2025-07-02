@@ -6,6 +6,7 @@ interface InputFieldProps {
   placeholder?: string;
   register: UseFormRegisterReturn;
   error?: FieldError;
+  className?: string;
 }
 
 const InputField = ({
@@ -14,6 +15,7 @@ const InputField = ({
   placeholder,
   register,
   error,
+  className = "",
 }: InputFieldProps) => (
   <div>
     {label && (
@@ -25,7 +27,7 @@ const InputField = ({
       type={type}
       placeholder={placeholder}
       {...register}
-      className="border border-gray-300 rounded px-3 py-2 text-sm focus:outline-none text-black placeholder:text-black w-full"
+      className={`border border-gray-300 rounded px-3 py-2 text-sm focus:outline-none text-black placeholder:text-black w-full ${className}`}
     />
     {error && <p className="text-red-500 text-sm mt-1">{error.message}</p>}
   </div>
