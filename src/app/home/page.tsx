@@ -3,6 +3,7 @@ import CoffeeGallery from '@/components/view/CoffeeGallery';
 import React from 'react'
 import BookTableForm from '../../components/view/BookTable';
 import PopularMenu from '@/components/view/PopularMenu';
+import OurBlog from '@/components/view/OurBlog';
 
 export default function HomePage() {
   return (
@@ -11,6 +12,7 @@ export default function HomePage() {
       <PopularMenu />
       <CoffeeGallery />
       <BookTableForm />
+      <OurBlog/>
     </div>
   );
 }
