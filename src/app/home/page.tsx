@@ -8,9 +8,9 @@ export default function HomePage() {
   return (
     <div className="flex flex-col starfield-sparkle">
       <Banner />
+      <PopularMenu />
       <CoffeeGallery />
       <BookTableForm />
-      <PopularMenu/>
     </div>
   );
 }

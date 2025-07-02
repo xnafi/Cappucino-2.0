@@ -2,10 +2,11 @@ import { menuItems } from "@/data/menuItems";
 import Image from "next/image";
 
 
+
 export default function PopularMenu() {
   return (
     <section className="container text-center">
-      <h2 className="text-3xl font-bold text-gray-900 mb-2">
+      <h2 className="sub-heading mb-2">
         OUR POPULAR MENU
       </h2>
 
