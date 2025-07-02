@@ -24,14 +24,12 @@ export default function Banner() {
       {/* image */}
       <div className="w-full lg:w-2/5 flex justify-center h-full">
         <motion.div
-          initial={{ y: [null, -15, 0] }}
-          animate={{ y: [null, 15, 0] }}
+          animate={{ y: [0, 15, 0], rotate: [0, 10, 0] }}
+          whileHover={{ y: [0, 0, 0], rotate: [10, 10, 10] }}
           transition={{
             duration: 2,
             ease: "easeInOut",
-            times: [0, 0.2, 0.5, 1, 0.3],
             repeat: Infinity,
-            repeatDelay: 1,
           }}
         >
           <Image
