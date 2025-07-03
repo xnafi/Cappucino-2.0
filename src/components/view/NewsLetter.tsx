@@ -17,7 +17,7 @@ const Newsletter = () => {
   };
 
   return (
-    <section className="bg-[#004443] text-white text-center container rounded-xl mb-7 mt-5">
+    <section className="bg-[#004443] text-white text-center container lg:rounded-xl mb-7 mt-5">
       <h2 className="text-2xl font-semibold">Subscribe to our newsletter.</h2>
       <p className="text-sm max-w-xl mx-auto mt-3">
         Lorem Ipsum is simply dummy text of the printing and typesetting

@@ -1,6 +1,8 @@
 import { blogItems } from "@/data/ourBlog";
 import * as motion from "motion/react-client";
 import Image from "next/image";
+import { FaLongArrowAltRight } from "react-icons/fa";
+
 
 export default function OurBlog() {
   return (
@@ -42,7 +44,9 @@ export default function OurBlog() {
                 </h3>
               </div>
               <p className="text-gray-600 text-sm mt-1">{item.description}</p>
-              <button className="hover">Learn More</button>
+              <button className="hover flex items-center gap-x-1">
+                Learn More <FaLongArrowAltRight />
+              </button>
             </div>
           </motion.div>
         ))}
