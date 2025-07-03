@@ -3,8 +3,9 @@ import InputField from "@/utils/InputField";
 import { useForm } from "react-hook-form";
 import Button from "../buttons/Button";
 import { ContactFormFields } from "@/types/AllTypes";
-
-
+import { MdEmail } from "react-icons/md";
+import { BiPhone } from "react-icons/bi";
+import { FaLandmark } from "react-icons/fa";
 
 export const ContactUs = () => {
   const {
@@ -17,7 +18,7 @@ export const ContactUs = () => {
   };
 
   return (
-    <section className="container flex justify-center w-full">
+    <section className="container flex flex-col md:flex-row justify-center w-full">
       <div className="w-full">
         <h3 className="sub-heading text-black mb-6">
           Have a question? Get in touch.
@@ -25,19 +26,28 @@ export const ContactUs = () => {
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           <div className="text-left text-sm text-[#432818] space-y-4">
             <div>
-              <strong>Email Address</strong>
-              <br />
-              cappuccion@gmail.com
+              <MdEmail className="text-xl" />
+              <div className="align-baseline">
+                <strong>Email Address</strong>
+                <br />
+                cappuccion@gmail.com
+              </div>
             </div>
             <div>
-              <strong>Call Us</strong>
-              <br />
-              +012-542-548-782
+              <BiPhone className="text-xl" />
+              <div className="align-baseline">
+                <strong>Call Us</strong>
+                <br />
+                +012-542-548-782
+              </div>
             </div>
             <div>
-              <strong>Our Address</strong>
-              <br />
-              2850 N College Ave, Arkansas.
+              <FaLandmark className="text-xl" />
+              <div className="align-baseline">
+                <strong>Our Address</strong>
+                <br />
+                2850 N College Ave, Arkansas.
+              </div>
             </div>
           </div>
         </div>
