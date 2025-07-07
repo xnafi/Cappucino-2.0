@@ -23,3 +23,10 @@ export type ContactFormFields = {
   subject: string;
   message: string;
 };
+// products type
+
+export interface Product {
+  title: string;
+  price: string;
+  image: string;
+}
