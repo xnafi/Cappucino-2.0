@@ -27,7 +27,7 @@ export default function PopularMenu() {
       </p>
 
       <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mx-auto text-left">
-        {menuItems.map((item, index) => (
+        {menuItems?.slice(0,6).map((item, index) => (
           <motion.div
             whileHover={{ scale: 1.03 }}
             transition={{ duration: 0.5,ease:"easeInOut"}}
