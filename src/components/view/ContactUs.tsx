@@ -18,12 +18,12 @@ export const ContactUs = () => {
   };
 
   return (
-    <section className="container flex flex-col md:flex-row justify-center w-full">
+    <section className="container flex flex-col md:flex-row justify-center w-full space-y-5">
       <div className="w-full">
         <h3 className="sub-heading text-black mb-6">
           Have a question? Get in touch.
         </h3>
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-3 ">
           <div className="text-left text-sm text-[#432818] space-y-4">
             <div>
               <MdEmail className="text-xl" />
