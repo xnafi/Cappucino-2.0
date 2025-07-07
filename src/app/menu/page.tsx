@@ -7,7 +7,7 @@ const MenuSection = () => {
   return (
     <section className="py-16 px-4 text-center bg-white">
       {/* Section Heading */}
-      <h2 className="text-lg font-medium text-[#2b2b2b] mb-1">Home / Menu</h2>
+      <h2 className="sub-heading text-[#2b2b2b] mb-1">Home / Menu</h2>
       <p className="text-sm text-gray-600 max-w-2xl mx-auto mb-10">
         Explore our handcrafted brews, delicious bites, and seasonal specials.
         Every item is made with care to delight your senses.
