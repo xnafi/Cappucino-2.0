@@ -20,7 +20,7 @@ export default function Button({
   ...rest
 }: ButtonProps) {
   const baseStyle =
-    " px-3 py-2 rounded-[8px] text-center font-medium flex items-center justify-center text-base  hover:shadow-[2px_4px_30px_#d63a76] ease-linear transition-all duration-300 transform";
+    " px-3 py-2 rounded-[8px] text-center font-medium flex items-center justify-center text-base  hover:shadow-[1px_1px_20px_#3f1c12] ease-linear transition-all duration-300 transform";
 
   const solidStyle = "primaryBg text-white text-base";
   const outlineStyle =

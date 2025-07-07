@@ -10,6 +10,7 @@ const Navbar = () => {
     { Home: "Home", Href: "/home" },
     { Home: "About", Href: "/about" },
     { Home: "Menu", Href: "/menu" },
+    { Home: "Products", Href: "/products" },
     { Home: "Contact", Href: "/contact" },
   ];
   return (

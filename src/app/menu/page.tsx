@@ -5,7 +5,7 @@ import * as motion from 'motion/react-client';
 
 const MenuSection = () => {
   return (
-    <section className="py-16 px-4 text-center bg-white">
+    <section className="container text-center bg-white mt-[2px]">
       {/* Section Heading */}
       <h2 className="sub-heading text-[#2b2b2b] mb-1">Home / Menu</h2>
       <p className="text-sm text-gray-600 max-w-2xl mx-auto mb-10">
