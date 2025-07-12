@@ -14,7 +14,7 @@ const Navbar = () => {
     { Home: "Contact", Href: "/contact" },
   ];
   return (
-    <nav className="shadow-md w-full z-10 lg:h-[100px] place-items-center grid">
+    <nav className="shadow-md w-full z-10 h-[100px] place-items-center grid">
       <div className="container mx-auto !py-0 ">
         <div className="flex items-center justify-between py-4">
           <div className="flex-shrink-0">
