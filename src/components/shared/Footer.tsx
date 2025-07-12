@@ -1,8 +1,6 @@
 import logo from "../../../public/assets/logo.png";
-
 import Image from "next/image";
 import Link from "next/link";
-import Button from "../buttons/Button";
 import { FaFacebookSquare, FaInstagramSquare, FaTwitterSquare, FaYoutubeSquare } from "react-icons/fa";
 
 const Footer = () => {
@@ -25,15 +23,7 @@ const Footer = () => {
             art of coffee, one cup at a time.
           </p>
         </div>
-        <form className="flex justify-center items-center gap-4 max-w-lg mx-auto">
-          <input
-            type="email"
-            placeholder="Enter your email"
-            className="py-2 px-2"
-          />
-          <Button variant="solid">{"  SUBMIT NOW"}</Button>
-        </form>
-        <div className="flex justify-center gap-4 mt-6 text-[#432818] text-xl">
+        <div className="flex justify-center gap-4 mt-2 text-[#432818] text-xl">
           <FaFacebookSquare />
           <FaInstagramSquare />
           <FaTwitterSquare />

@@ -44,8 +44,12 @@ const Navbar = () => {
           </div>
           {/* button */}
           <div className="hidden lg:flex space-x-4">
-            <Button variant="solid">{"SIGN UP"}</Button>
-            <Button variant="outline">{"LOGIN"}</Button>
+            <Button variant="solid" href="/sign-up">
+              {"SIGN UP"}
+            </Button>
+            <Button variant="outline" href="/login">
+              {"LOGIN"}
+            </Button>
           </div>
           {/* Hamburger menu */}
           <div className="lg:hidden">
@@ -109,10 +113,14 @@ const Navbar = () => {
                       <NavLink href={nav.Href} key={index} label={nav.Home} />
                     );
                   })}
-                
+
                   <div className="flex space-x-2.5">
-                    <Button variant="solid">{"SIGN UP"}</Button>
-                    <Button variant="outline">{"LOGIN"}</Button>
+                    <Button variant="solid" href="/sign-up">
+                      {"SIGN UP"}
+                    </Button>
+                    <Button variant="outline" href="/login">
+                      {"LOGIN"}
+                    </Button>
                   </div>
                 </nav>
               </div>
